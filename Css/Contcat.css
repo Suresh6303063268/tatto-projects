@@ -1,0 +1,445 @@
+
+
+.Contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+
+    form div {
+        margin-bottom: 20px;
+
+
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #f50418;
+            font-size: 20px;
+          }
+          
+          input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+          }
+
+
+          input[type="text"], input[type="email"], textarea {
+            background-color: white;
+            color: black;
+          }
+          
+          textarea {
+            resize: none;
+          }
+          
+          .name-fields {
+            display: flex;
+            gap: 10px;
+          }
+
+
+          .name-fields input {
+            flex: 1;
+          }
+          
+      }
+
+
+      .submit-btn {
+        background-color: #f40772;
+        color: white;
+        width: 200px;
+        height:40px;
+        border: none;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius:10px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .submit-btn:hover {
+        background-color: #e64a19;
+      }
+      
+
+  }
+
+
+
+
+  .Timeing-Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+    .Timeing-Section1 {
+        flex: 1;
+        min-width: 200px;
+
+
+        h2{
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            line-height: 2;
+        }
+    }
+
+
+    .Timeing-Section2 {
+        flex: 1;
+        min-width: 200px;
+
+
+
+        p {
+            font-size:19px;
+            margin-bottom:0px;
+        }
+        
+        strong {
+            font-weight: bold;
+            color: #fcfbfb;
+        }
+        
+        
+        
+
+    }
+    
+
+
+}
+
+
+h1.soft-heading, p.soft-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  @media (max-width: 768px) {
+  
+.Contact-section {
+    width:750px;
+    margin: 0 auto;
+    padding: 20px;
+
+
+    form div {
+        margin-bottom: 20px;
+
+
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #f50418;
+            font-size: 20px;
+          }
+          
+          input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+          }
+
+
+          input[type="text"], input[type="email"], textarea {
+            background-color: white;
+            color: black;
+          }
+          
+          textarea {
+            resize: none;
+          }
+          
+          .name-fields {
+            display: flex;
+            gap:30px;
+          }
+
+
+          .name-fields input {
+            flex: 1;
+          }
+          
+      }
+
+
+      .submit-btn {
+        background-color: #f40772;
+        color: white;
+        width: 200px;
+        height:40px;
+        border: none;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius:10px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .submit-btn:hover {
+        background-color: #e64a19;
+      }
+      
+
+  }
+
+  }
+  
+  @media (max-width: 480px) {
+   
+.Contact-section {
+    width:100%;
+    max-width:350px !important;
+    margin: 0 auto;
+    padding: 20px;
+
+
+    form div {
+        margin-bottom: 20px;
+
+
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #f50418;
+            font-size: 20px;
+          }
+          
+          input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+          }
+
+
+          input[type="text"], input[type="email"], textarea {
+            background-color: white;
+            color: black;
+          }
+          
+          textarea {
+            resize: none;
+          }
+          
+          .name-fields {
+            display: flex;
+            gap:30px;
+          }
+
+
+          .name-fields input {
+            flex: 1;
+          }
+          
+      }
+
+
+      .submit-btn {
+        background-color: #f40772;
+        color: white;
+        width: 200px;
+        height:40px;
+        border: none;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius:10px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .submit-btn:hover {
+        background-color: #e64a19;
+      }
+      
+
+  }
+
+
+
+
+
+.map{
+    width: 100%;
+}
+
+
+  .Timeing-Section {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+    .Timeing-Section1 {
+        flex: 1;
+        min-width: 200px;
+
+
+        h2{
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            line-height: 2;
+        }
+    }
+
+
+    .Timeing-Section2 {
+        flex: 1;
+        min-width: 200px;
+
+
+
+        p {
+            font-size:19px;
+            margin-bottom:0px;
+        }
+        
+        strong {
+            font-weight: bold;
+            color: #fcfbfb;
+        }
+        
+        
+        
+
+    }
+    
+
+
+}
+
+
+h1.soft-heading, p.soft-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+  
+  }
+
+
+
+  
+
+  @media (max-width:1280px) {
+  
+    .Contact-section {
+        width:950px;
+        margin: 0 auto;
+        padding: 20px;
+    
+    
+        form div {
+            margin-bottom: 20px;
+    
+    
+    
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 8px;
+                color: #f50418;
+                font-size: 20px;
+              }
+              
+              input, textarea {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+              }
+    
+    
+              input[type="text"], input[type="email"], textarea {
+                background-color: white;
+                color: black;
+              }
+              
+              textarea {
+                resize: none;
+              }
+              
+              .name-fields {
+                display: flex;
+                gap:30px;
+              }
+    
+    
+              .name-fields input {
+                flex: 1;
+              }
+              
+          }
+    
+    
+          .submit-btn {
+            background-color: #f40772;
+            color: white;
+            width: 200px;
+            height:40px;
+            border: none;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius:10px;
+            transition: background-color 0.3s ease;
+          }
+          
+          .submit-btn:hover {
+            background-color: #e64a19;
+          }
+          
+    
+      }
+    
+      }

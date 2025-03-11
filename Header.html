@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eccromance Header</title>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="./Css/Popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+</head>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./Images/taato.jpg" alt="">
+                <a href="#">Tatito Projects</a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+
+
+            <ul class="nav-links">
+               
+               
+
+
+                <li class="dropdown">
+                    <a href="Services.html">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Internationalvoice.html"  onclick="showPopup(event)" >International Project(voice and Non Voice)</a></li>
+                        <li><a href="Domistaic-Voice.html"   >Domestic Voice Process(Banking)</a></li>
+                        <li><a href="Digital-Marketing.html"   >Digital Marketing</a></li>
+                        <li><a href="Softwate-Projects.html"   >Software Projects</a></li>
+                        <li><a href="#graphic-design">Real Estate.(Construction,buy,Sell Promotions)</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#seo">Documentation</a>
+                            <ul class="submenu">
+                                <li><a href="Engneering.html"   >Engneering Documentation</a></li>
+                                <li><a href="#technical-docs">Banking Documentation</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li><a href="Film-Industry.html"            >Film Industry Requirements</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="Education.html">Education</a>
+                    <ul class="dropdown-menu">
+
+                        <li class="dropdown-submenu">
+                          <a href="#seo">It & Non It Jobs & Training</a>
+                          <ul class="submenu">
+                              <li><a href="Engneering.html">Soft Technologies</a></li>
+                             
+                            
+                          </ul>
+                      </li>
+
+
+                      <li class="dropdown-submenu">
+                        <a href="#seo">Commitative Examinations</a>
+                        <ul class="submenu">
+                            <li><a href="Engneering.html">Schools</a></li>
+                            <li><a href="#technical-docs">Colleges</a></li>
+                            <li><a href="Personality.html">Communication Development Skills</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                        
+                    </ul>
+                </li>
+                <li><a href="About.html"   >About</a></li>
+                <li><a href="Contact.html"   >Contact</a></li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="#wallet"><i class="fas fa-wallet"></i> Wallet</a></li>
+                <li><a href="#my-account"><i class="fas fa-user"></i> My Account</a></li>
+            </ul>
+           
+        </nav>
+    </header>
+
+
+
+   <script>document.querySelector('.hamburger').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>
+
+
+<script>
+  function showPopup(event) {
+  event.preventDefault(); // Prevent the default link behavior (page navigation)
+
+  Swal.fire({
+   
+    html: `
+      <div class="popup-img">
+        <div class="popup-img1">
+          <img src="./Images/tatto33.jpg" alt="Film Industry Image">
+        </div>
+        <div class="popup-img2">
+          <div class="tab">
+            <button class="tablinks login-btn" onclick="openCity(event, 'Login')">Login</button>
+            <button class="tablinks signup-btn" onclick="openCity(event, 'SignUp')">SignUp</button>
+          </div>
+
+          <div id="Login" class="tabcontent">
+            <h3>Login</h3>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+              </div>
+              <div class="form-group">
+                <button type="submit">Login</button>
+              </div>
+              <div class="form-group">
+                <p>Don't have an account? <a href="#" onclick="openCity(event, 'SignUp')">Sign Up</a></p>
+              </div>
+            </form>
+          </div>
+
+          <div id="SignUp" class="tabcontent">
+            <h3>Sign Up</h3>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="signup-name">Full Name:</label>
+                <input type="text" id="signup-name" name="name" required placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required placeholder="Enter your password">
+              </div>
+              <div class="form-group">
+                <label for="signup-confirm-password">Confirm Password:</label>
+                <input type="password" id="signup-confirm-password" name="confirm-password" required placeholder="Confirm your password">
+              </div>
+              <div class="form-group">
+                <button type="submit">Sign Up</button>
+              </div>
+              <div class="form-group">
+                <p>Already have an account? <a href="#" onclick="openCity(event, 'Login')">Login</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    `,
+    willOpen: () => {
+      // Trigger the first tab to open by default (Login tab)
+      const firstTab = document.querySelector('.tab button');
+      firstTab.classList.add('active'); // Set the first tab as active
+      document.getElementById('Login').style.display = 'block'; // Display the 'Login' tab by default
+
+      // Add event listeners for tab switching
+      const loginBtn = document.querySelector('.tab .login-btn');
+      const signupBtn = document.querySelector('.tab .signup-btn');
+
+      loginBtn.addEventListener('click', (event) => openCity(event, 'Login'));
+      signupBtn.addEventListener('click', (event) => openCity(event, 'SignUp'));
+    }
+  }).then(() => {
+    // Redirect to the Film Industry page after the popup closes
+    window.location.href = "Internationalvoice.html";
+  });
+}
+
+// Tab switching function
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  // Hide all tab content
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove 'active' class from all tab links
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
+  }
+
+  // Show the clicked tab content
+  document.getElementById(cityName).style.display = "block";
+
+  // Add 'active' class to the clicked tab
+  evt.currentTarget.classList.add("active");
+}
+
+</script>
+
+
+
+<!--Inter voice process-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

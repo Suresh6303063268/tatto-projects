@@ -1,0 +1,370 @@
+.swal2-popup {
+    padding: 20px;
+    width:950px !important;
+    background-color: rgb(213, 11, 65) !important;
+    margin-top:80px;
+  }
+
+  /* Make sure the image scales with the popup */
+  .popup-img {
+
+    display: flex !important;
+    flex-direction: row !important;
+    height: auto;
+
+    .popup-img1{
+        width:200px !important;
+      
+       img{
+        height:80vh;
+        width:400px;
+       }
+       
+      
+      }
+
+     
+    
+
+
+      .popup-img2{
+        width: 100%;
+        height:auto !important;
+        max-height: 600px;
+        max-width:100px; /* Limit the image width to 400px */
+        margin: 0 auto; /* Center the image */
+      
+      }
+
+
+  }
+  
+  
+  
+  
+  
+  /* Optional: Styling for text and layout */
+  .swal2-html-container {
+    font-family: Arial, sans-serif;
+  }
+
+
+  .tab {
+  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+  
+    margin-bottom: 20px;
+    gap: 30px;
+    
+  }
+
+
+
+/* Styling for the Login Tab Button */
+.tab .login-btn {
+  background-color: #124ae5;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  flex: 1;
+  text-align:left;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: -50px;
+  width: 150px;
+}
+
+.tab .login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the Sign Up Tab Button */
+.tab .signup-btn {
+  background-color: #0b2ada;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  flex: 1;
+  float: right !important;
+  margin-left:180px !important;
+  width: 150px;
+  margin-top:-80px;
+
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.tab .signup-btn:hover {
+  background-color: #dbc607;
+}
+
+/* Active Tab Button */
+.tab button.active {
+  background-color: #4CAF50; /* For both buttons, you can customize this too */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+  .tabcontent {
+    display:none;
+    padding: 20px;
+    border-top: none;
+  }
+
+  .tabcontent h3 {
+    margin-top: 0;
+  }
+
+
+  /* General styles for the form */
+.form-group {
+  margin-bottom: 15px;
+  width:100% !important;
+
+label{
+  color: #007BFF;
+  text-align: left;
+  float:left;
+}
+
+
+}
+
+.form-group input {
+  width:90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+.form-group a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.form-group a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* General styling for the form */
+#Login {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  width:450px !important;
+ 
+  margin-left:-50px;
+  margin-right: auto;
+  box-sizing: border-box;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for form fields and buttons */
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+.form-group a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.form-group a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 600px) {
+  #Login {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Responsive Design for Medium Screens (Tablets) */
+@media screen and (max-width: 768px) {
+  #Login {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+/* For Large Screens */
+@media screen and (min-width: 769px) {
+  #Login {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+/* Layout and structure of the form */
+#SignUp {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  width:450px !important;
+  box-sizing: border-box;
+  margin-left:-70px;
+  
+  
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align:center;
+  color: #ff0404;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  /* For small screens (mobile devices) */
+  #SignUp {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* For tablets or small laptops */
+  #SignUp {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* For larger screens */
+  #SignUp {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}

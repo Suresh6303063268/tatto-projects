@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Layout</title>
+  <link rel="stylesheet" href="./Css/Fotter.css">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        <img src="./Images/taato.jpg" alt="Logo">
+        <p>Tatito Projects</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+            <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="Engneering.html">Documentation</a></li>
+            <li><a href="Digital-Marketing.html">Digital Marketing</a></li>
+            <li><a href="Softwate-Projects.html">Software Projects</a></li>
+            <li><a href="#">IT & Non-IT Jobs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wallet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Courses</h3>
+          <ul>
+            <li><a href="#">Java Full Stack</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">UI/UX</a></li>
+            <li><a href="#">ReactJs & React Native</a></li>
+            <li><a href="#">Node Js</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Subscribe</h3>
+          <form action="#">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer-social">
+            <a class="social-icon" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="social-icon1" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="social-icon2" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-icon3" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="social-icon4" href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Wtsap_icon" onClick="openWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    
+      <div class="Arrow_icon" onClick="handleClick()">
+        <i class="fa-solid fa-arrow-up" id="scrollArrow"></i>
+      </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p>© 2024 Tatito Projects. All rights reserved.</p>
+  </div>
+
+  
+
+  <script>
+    const openWhatsApp = () => {
+      const phoneNumber = "7995928999"; // Replace with the actual phone number
+      const message = "Thank you for contacting"; // The default message
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank'); // Opens WhatsApp link in a new tab
+    };
+
+    let isUp = true; // initial state
+
+    const handleClick = () => {
+      if (isUp) {
+        // Scroll to top of the page
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', // This makes it smooth
+        });
+      } else {
+        // Scroll to bottom of the page
+        window.scrollTo({
+          top: document.documentElement.scrollHeight, // Scroll to the bottom
+          behavior: 'smooth',
+        });
+      }
+
+      // Toggle arrow icon state
+      isUp = !isUp;
+      const arrowIcon = document.getElementById("scrollArrow");
+      if (isUp) {
+        arrowIcon.classList.replace("fa-arrow-down", "fa-arrow-up");
+      } else {
+        arrowIcon.classList.replace("fa-arrow-up", "fa-arrow-down");
+      }
+    };
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+  width: auto;
+  height: auto;
+    overflow: auto;
+   
+    background: linear-gradient(to right, cornflowerblue, rgb(0, 128, 119));
+
+
+   header{
+    background-color: cornflowerblue;
+    width: 100%;
+    
+    h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #333;
+        padding: 10px;
+    }
+
+   }
+
+
+
+   .develop{
+
+    display: flex;
+    justify-content: space-around;
+
+    .develop1{
+
+        h1{
+           font-size: 3rem;
+           font-family: 'Poppins', sans-serif;
+           font-weight: 600;
+           color: coral;
+        }
+
+        p{
+            font-size: 1.2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: #333;
+            width: 50vw;
+            text-align: justify;
+            line-height: 2;
+        }
+
+        
+
+    }
+
+    .develop2{
+       margin: 0px;
+
+        img{
+            height: 400px;
+            width: 700px;
+            object-fit: fill;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+        }
+    }
+   }
+
+
+   .communication{
+
+
+    display: flex;
+    justify-content: space-evenly;
+
+    .commu1{
+        
+        img{
+            height: 400px;
+            width: 700px;
+            object-fit: fill;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .commu2{
+
+        h1{
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: coral;
+         }
+ 
+         p{
+             font-size: 1.3rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 3;
+             margin: 0px;
+         }  
+
+
+
+    }
+
+
+
+   }
+
+
+
+
+
+   .middle{
+
+
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 20px;
+  
+   margin-top: 20px;
+
+ 
+ 
+
+  
+
+    .middle1{
+
+        margin: 10px ;
+
+        h2{
+            font-size: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #333;
+         }
+
+         p{
+            font-size: 1rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 50vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             span{
+                font-weight: 400;
+                 font-size: 1.2rem;
+                 color: #333;
+             }
+
+             &:nth-of-type(4),
+             &:nth-of-type(5),
+             &:nth-of-type(6) {
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: #333;
+                
+             }
+         }
+        
+        }
+
+
+        .middle2{
+
+            
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+            font-size: 1rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 3;
+             width: 40vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+
+        }
+
+
+        .middle3{
+
+            margin: 10px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+
+        }
+
+
+
+        .middle4{
+
+            margin: 5px 0px 0px 5px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 40vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+        }
+
+        .middle5{
+            margin: 10px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 45vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+        }
+
+
+        .middle6{
+            margin: 5px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 40vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+        }
+
+
+        .middle7{
+
+            margin: 10px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 45vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+
+
+        }
+
+        .middle8{
+
+            margin: 5px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+             p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 45vw;
+
+             &::before{
+                content: '👉';
+             }
+
+             }
+
+
+        }
+
+        .middle9{
+
+            margin: 10px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             }
+
+            p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 45vw;
+
+             span{
+                font-weight: 400;
+                 font-size: 1.2rem;
+                 color: #333;
+             }
+
+             &:nth-of-type(2),
+             &:nth-of-type(3),
+             &:nth-of-type(4) {
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: #333;
+                
+             }
+
+
+             
+
+             &::before{
+                content: '👉';
+             }
+            } 
+        }
+
+        .middle10{
+            margin: 5px;
+
+            h2{
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: #333;
+             
+                
+            }
+
+            p{
+                font-size: 1.2rem;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 400;
+             color: #333;
+             width: 50vw;
+             text-align: justify;
+             line-height: 2.5;
+             width: 40vw;
+
+             span{
+                font-weight: 400;
+                 font-size: 1.2rem;
+                 color: #333;
+             }
+
+             &:nth-of-type(2),
+             &:nth-of-type(3),
+             &:nth-of-type(4),
+             &:nth-of-type(5),
+             &:nth-of-type(6),
+             &:nth-of-type(7) ,
+             &:nth-of-type(8) {
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: #333;
+                
+             }
+
+
+             
+
+             &::before{
+                content: '👉';
+             }
+            } 
+
+        }
+       
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:320px ) and  (max-width: 768px){
+
+   body{
+
+      header{
+         h1{
+            font-size: 1.2rem;
+         }
+      }
+
+
+      .develop{
+
+         flex-direction: column;
+
+         
+         .develop1{
+
+            h1{
+               font-size: 1.8rem;
+               text-align: center;
+            }
+            p{
+               font-size: 1rem;
+               font-weight: 500;
+               line-height: 2.2;
+               text-align: justify;
+               width: 100%;
+            }
+         }
+
+         .develop2{
+            img{
+               width: 100%;
+            }
+         }
+
+      }
+
+
+      .communication{
+
+         flex-direction: column;
+
+         .commu1{
+
+            img{
+               width: 100%;
+            }
+
+         }
+
+         .commu2{
+            h1{
+               font-size: 1.8rem;
+               text-align: center;
+            }
+            p{
+               font-size: 1rem;
+               font-weight: 500;
+               line-height: 2.2;
+               text-align: justify;
+               width: 100%;
+            }
+         }
+
+      }
+
+
+
+      .middle{
+
+         grid-template-columns: repeat(1, 1fr);
+
+         .middle1{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+
+
+         .middle2{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+
+         .middle3{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+
+         .middle4{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+
+         .middle5{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+         .middle6{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+         .middle7{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+         .middle8{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+         .middle9{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+         .middle10{
+            h2{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+         
+
+      }
+
+   }
+
+
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+
+   body{
+
+
+      .develop{
+
+
+         flex-direction: column;
+
+         .develop1{
+
+            h1{
+               text-align: center;
+
+            }
+            p{
+               width:100%;
+            }
+         }
+
+         .develop2{
+            img{
+                width: 100%;
+                height: 500px;
+             }
+         }
+      }
+
+
+      .communication{
+
+         flex-direction: column;
+
+         .commu1{
+
+            img{
+               width: 100%;
+            }
+         }
+
+         .commu2{
+            h1{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+      }
+
+   }
+
+
+
+}
+
+
+
+
+@media screen and (min-width:1025px) and (max-width:1280px){
+
+   body{
+
+
+      .develop{
+
+         flex-direction: column;
+
+         .develop1{
+            h1{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+         .develop2{
+            img{
+               width: 100%;
+               height: 500px;
+            }
+         }
+
+      }
+
+      .communication{
+
+         flex-direction: column;
+         .commu1{
+            img{
+               width: 100%;
+            }
+         }
+
+         .commu2{
+            h1{
+               text-align: center;
+            }
+            p{
+               width: 100%;
+            }
+         }
+
+      }
+
+   }
+
+}
+
+
+
+@media screen and (min-width:1281px) and (max-width:1440px){
+
+
+   
+
+}
+
+   
+
+
+
+

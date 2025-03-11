@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login with SweetAlert</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <style>
+    /* Styling for the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('your-image-path.jpg');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to trigger SweetAlert login popup -->
+  <button onclick="openLoginPopup()">Login</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    function openLoginPopup() {
+      Swal.fire({
+        title: 'Login',
+        html: `
+          <div class="login-container">
+            <input type="text" id="username" placeholder="Username / Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Sign In</button>
+          </div>
+        `,
+        showConfirmButton: false,
+        showCloseButton: true,
+        focusConfirm: false,
+        width: 'auto',
+        padding: '15px',
+        customClass: {
+          popup: 'popup-class'
+        },
+      });
+    }
+
+    // Handle the form submission in SweetAlert
+    function login() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (username === "" || password === "") {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please enter both username and password!',
+        });
+        return;
+      }
+
+      // Simulate successful login
+      Swal.fire({
+        icon: 'success',
+        title: 'Logged In',
+        text: 'You have successfully logged in!',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Example redirect after successful login
+          window.location.href = "welcome.html";  // Change to your target URL
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

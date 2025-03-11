@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Project</title>
+  <link rel="stylesheet" href="./Css/International.css">
+  <link rel="stylesheet" href="./Css/Domastic.css">
+  <link rel="stylesheet" href="./Css/Soft.css">
+  <link rel="stylesheet" href="./Css/Contcat.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.8/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.8/dist/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+
+
+    <div id="head_content">
+
+
+    </div>
+
+
+  <div class="Ide">
+    <h1>Contact Us</h1>
+  </div>
+
+  
+   
+
+
+
+
+
+
+    <div class="domastic-container">
+        <div class="image-section">
+            <h1 class="voice-heding">Contact Us</h1>
+           
+            
+            <div class="Contact-section">
+                <form id="contactForm">
+                  <div>
+                    <label for="first-name">Name <span style="color: red;">*</span></label>
+                    <div class="name-fields">
+                      <input type="text" id="first-name" placeholder="First" required>
+                      <input type="text" id="last-name" placeholder="Last" required>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="phone-number">Phone Number <span style="color: red;">*</span></label>
+                    <input type="text" id="phone-number" required>
+                  </div>
+                  <div>
+                    <label for="email">Email <span style="color: red;">*</span></label>
+                    <input type="email" id="email" required>
+                  </div>
+                  <div>
+                    <label for="paragraph-text">Paragraph Text</label>
+                    <textarea id="paragraph-text" rows="4"></textarea>
+                  </div>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+              
+        </div>
+        
+        <div class="text-section">
+           
+            
+
+
+            <iframe class="map"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d969.386251867861!2d79.43468247520694!3d13.624577797037572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b085e6780cf%3A0x32b866f5776709de!2sTATITO%20PROJECTS!5e0!3m2!1sen!2sus!4v1733398272289!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+          
+
+
+          
+          
+
+
+
+        </div>
+        
+    </div>
+
+
+
+
+
+   
+           
+
+
+            
+
+
+  
+
+
+
+
+
+    <div class="domastic-container">
+       
+      
+        <div class="text-section">
+
+         
+           
+            <h2 class="domasic-heding">GET IN TOUCH</h2>
+           
+            <p>
+                <span class="left-icon"><i class="fa-solid fa-phone"></i></span>
+               
++91 7995928999 / +91 7093 704 706
+            </p>
+
+
+
+
+          
+
+           
+            <p>
+                <span class="left-icon"><i class="fa-solid fa-envelope"></i></span>
+               
+                support@tatitoprojects.com
+            </p>
+
+
+
+          
+
+           
+            <p>
+                <span class="left-icon"><i class="fa-brands fa-google"></i></span>
+               tatitoprojects.com
+
+            </p>
+
+
+            <p>
+                <span class="left-icon"><i class="fa-duotone fa-solid fa-address-card"></i></span>
+                19-3-2/G11, KANIKA SIDDAIAH COLONY, Tirupati, Andhra Pradesh 517501
+
+            </p>
+
+
+
+
+
+
+
+
+
+
+           
+          
+       
+        </div>
+        <div class="image-section">
+
+            <div class="Timeing-Section">
+                <div class="Timeing-Section1">
+
+            <h1 class="soft-heading">Our Timeings</h1>
+            <h2 class="domasic-heding">MONDAY</h2>
+            <h2 class="domasic-heding">TUESDAY</h2>
+            <h2 class="domasic-heding">WEDNSDAY</h2>
+            <h2 class="domasic-heding">THURSDAY</h2>
+            <h2 class="domasic-heding">FRIDAY</h2>
+            <h2 class="domasic-heding">SATURDAY</h2>
+            <h2 class="domasic-heding">SUNDAY</h2>
+            
+        </div>
+
+
+        <div class="Timeing-Section2">
+
+         
+            <p><strong>9AM TO 6PM</strong></p> 
+            <p><strong>9AM TO 6PM</strong></p> 
+            <p><strong>9AM TO 6PM</strong></p> 
+            <p><strong>9AM TO 6PM</strong></p> 
+            <p><strong>9AM TO 6PM</strong></p> 
+            <p><strong>9AM TO 6PM</strong></p> 
+            <p><strong>9AM TO 6PM</strong></p> 
+            
+            
+        </div>
+    </div>
+
+        </div>
+
+
+        
+              
+        </div>
+      
+
+
+
+        
+
+
+
+
+  
+
+        
+
+
+  <div id="footer_content">
+
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      emailjs.init("fGu5-ojaPEN0erJH3");
+
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default form submission
+
+        const firstName = document.getElementById("first-name").value.trim();
+        const lastName = document.getElementById("last-name").value.trim();
+        const phoneNumber = document.getElementById("phone-number").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("paragraph-text").value.trim();
+
+        // Validate required fields
+        if (!firstName || !lastName || !phoneNumber || !email) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Please fill out all required fields!',
+          });
+          return;
+        }
+
+        if (!/^\d+$/.test(phoneNumber)) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Invalid phone number!',
+            text: 'Phone number must contain only numbers!',
+          });
+          return;
+        }
+
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Invalid email!',
+            text: 'Please enter a valid email address!',
+          });
+          return;
+        }
+
+        console.log("Data being sent to EmailJS:", {
+          name: `${firstName} ${lastName}`,
+          phone: phoneNumber,
+          email: email,
+          message: message,
+        });
+
+        emailjs
+          .send("service_ebstpd4", "template_usylohb", {
+            name: `${firstName} ${lastName}`,
+            phone: phoneNumber,
+            email: email,
+            message: message,
+          })
+          .then((response) => {
+            Swal.fire({
+              icon: 'success',
+              title: 'Form Submitted!',
+              text: "We'll contact you soon.",
+            });
+            console.log("SUCCESS!", response.status, response.text);
+            document.getElementById("contactForm").reset();
+          })
+          .catch((error) => {
+            Swal.fire({
+              icon: 'error',
+              title: 'Submission Failed!',
+              text: 'Oops! Something went wrong. Please try again.',
+            });
+            console.error("FAILED...", error);
+          });
+      });
+    });
+  </script>
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#head_content').load('Header.html');
+      $('#footer_content').load('Footer.html');
+     
+    });
+  </script>
+
+</body>
+</html>
