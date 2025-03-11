@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "../About.html",
+        "src": "About.html",
         "use": "@vercel/static"
       },
       {
@@ -11,6 +11,10 @@
       }
     ],
     "routes": [
+      {
+        "src": "/about",
+        "dest": "/About.html"
+      },
       {
         "src": "/(.*)",
         "dest": "/$1"
